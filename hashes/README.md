@@ -2,7 +2,7 @@ Store captured SHA-256 outputs here as text files, for example:
 
 - `property_001.sha256.txt`
 - `property_001_modified.sha256.txt`
-
+  
 Do not store real identity documents.
 
 Generate the sample hash with:

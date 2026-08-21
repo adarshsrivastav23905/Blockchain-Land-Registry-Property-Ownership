@@ -3,7 +3,7 @@
 ## Abstract
 
 This project is an educational blockchain prototype that models property registration, verification, ownership transfer, document-hash verification, and auditable event history using Solidity. Synthetic property records and test wallets are used throughout. The project demonstrates how an Ethereum-compatible blockchain can make a digital record tamper-evident while clearly separating an on-chain prototype from legally recognized property ownership.
-
+  
 ## Introduction
 
 Traditional property records may involve multiple offices, paper records, databases, and manual verification. The prototype explores how a smart contract could coordinate core registry operations and preserve an auditable sequence of blockchain transactions.

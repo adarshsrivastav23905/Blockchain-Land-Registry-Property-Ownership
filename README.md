@@ -4,7 +4,7 @@
 
 ## Author
 
-**Adarsh Srivastav**  
+**Adarsh Srivastav**    
 Computer Science and Engineering Student  
 Blockchain | Solidity | Web3 | Smart Contracts
 

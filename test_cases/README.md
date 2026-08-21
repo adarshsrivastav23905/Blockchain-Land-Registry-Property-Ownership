@@ -7,7 +7,7 @@ The project combines automated Hardhat tests with a manual MetaMask/frontend val
 | TC-01 | Deploy contract | Deployer is admin |
 | TC-02 | Register valid property | Property ID 1 is stored |
 | TC-03 | Register duplicate ID | Transaction reverts |
-| TC-04 | Verify property as admin | Property becomes verified |
+| TC-04 | Verify property as admin | Property becomes verified |  
 | TC-05 | Verify as unauthorized account | Transaction reverts |
 | TC-06 | Transfer before verification | Transaction reverts |
 | TC-07 | Transfer as current owner | New owner is stored |

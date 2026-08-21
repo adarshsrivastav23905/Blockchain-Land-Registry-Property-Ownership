@@ -10,7 +10,7 @@ Blockchain | Solidity | Web3 | Smart Contracts
 
 This project is an educational blockchain prototype for registering synthetic property records, verifying them through an authority account, transferring ownership, preserving document hashes, and reconstructing an audit history from smart-contract events.
 
-The prototype uses Solidity, Hardhat, Ethers.js, MetaMask, and a React + Vite frontend. It is validated on a local Ethereum-compatible blockchain and does not represent a legal land registry.
+The prototype uses Solidity, Hardhat, Ethers.js, MetaMask, and a React + Vite frontend. It is validated on a local Ethereum-compatible blockchain and does not represent a legal land registry.  
 
 ## Objectives
 

@@ -5,7 +5,7 @@ async function main() {
   const LandRegistry = await hre.ethers.getContractFactory("LandRegistry");
   const registry = await LandRegistry.deploy();
   await registry.waitForDeployment();
-
+  
   const propertyTx = await registry.registerProperty(
     1,
     "P-001",
