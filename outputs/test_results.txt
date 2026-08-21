@@ -1,0 +1,4 @@
+Command: npm test
+Result: 15 passing
+
+Coverage includes deployment, permissions, registration, verification, ownership transfer, owner indexes, document hashes, events, and invalid inputs.

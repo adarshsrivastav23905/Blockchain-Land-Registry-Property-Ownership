@@ -1,0 +1,9 @@
+Project status: FUNCTIONAL LOCAL DAPP PROTOTYPE
+
+Frontend: React + Vite
+Blockchain: Hardhat Local
+Chain ID: 31337
+Demo property: ID 1, P-001
+Demo state: VERIFIED
+Automated tests: 15 passing
+Physical/legal validation: NOT APPLICABLE

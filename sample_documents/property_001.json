@@ -1,0 +1,10 @@
+{
+  "propertyId": "P001",
+  "propertyNumber": "P-001",
+  "surveyNumber": "SYN-2026-001",
+  "dummyOwner": "Owner A (test wallet)",
+  "location": "Synthetic District, Demo City",
+  "areaSqFt": 1200,
+  "propertyType": "Residential",
+  "note": "Synthetic educational data. Not a legal land record."
+}

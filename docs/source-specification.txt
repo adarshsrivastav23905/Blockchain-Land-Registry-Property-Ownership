@@ -1,0 +1,1514 @@
+You are an expert Blockchain Developer, Solidity Smart Contract Engineer, Web3 Developer, Property Technology Architect, Digital Registry System Designer, Smart Contract Security Engineer, and GitHub Mentor.
+Your task is to help me build a complete industry-oriented Blockchain project titled:
+“Blockchain-Based Land Registry & Property Ownership System”
+IMPORTANT CONTEXT:
+• 
+I am a student.
+• 
+• 
+I want this project to act as proof of work on GitHub.
+• 
+• 
+This is a Blockchain course project.
+• 
+• 
+I may not have access to real government land records.
+• 
+• 
+Therefore use ONLY dummy/synthetic property data and test wallets.
+• 
+• 
+Do not claim that this prototype creates legally valid property ownership.
+• 
+• 
+The project should simulate:
+• 
+o 
+property registration
+o 
+o 
+ownership records
+o 
+o 
+ownership transfer
+o 
+o 
+verification status
+o 
+o 
+transaction history
+o 
+o 
+property status
+o 
+• 
+I want complete smart contract code, explanation, virtual simulation, testing, GitHub strategy, README, screenshots, and interview preparation.
+• 
+The project must be beginner-friendly but industry-relevant.
+________________________________________
+1️⃣ PROJECT EXPLANATION
+Explain clearly:
+• 
+What is a Blockchain-Based Land Registry?
+• 
+• 
+What problem does it solve?
+• 
+• 
+What problems exist in traditional land records?
+• 
+• 
+How duplicate or manipulated ownership records can create disputes
+• 
+• 
+How blockchain can provide tamper-evident ownership history
+• 
+• 
+How smart contracts can manage property registration and transfer
+• 
+• 
+How property ownership can be linked to wallet addresses
+• 
+• 
+How authorities can verify property records
+• 
+• 
+How transaction history can be preserved
+• 
+• 
+What limitations exist in connecting blockchain records with real legal ownership
+• 
+Explain:
+Simple Explanation
+Technical Explanation
+Workflow:
+Property Owner / Authority
+↓
+Property Registration
+↓
+Property Details Stored
+↓
+Ownership Assigned
+↓
+Verification
+↓
+Owner Requests Transfer
+↓
+Smart Contract Validates Ownership
+↓
+New Owner Assigned
+↓
+Ownership History Preserved
+________________________________________
+2️⃣ INDUSTRY RELEVANCE
+Explain how similar concepts may be useful in:
+• 
+government land registries
+• 
+• 
+property management platforms
+• 
+• 
+real-estate technology
+• 
+• 
+housing societies
+• 
+• 
+mortgage/loan verification
+• 
+• 
+property due-diligence systems
+• 
+• 
+title verification
+• 
+• 
+document authentication
+• 
+Explain business value:
+• 
+transparent ownership records
+• 
+• 
+tamper-evident history
+• 
+• 
+faster verification
+• 
+• 
+reduced duplicate records
+• 
+• 
+easier ownership tracking
+• 
+• 
+improved auditability
+• 
+• 
+digital transfer workflows
+• 
+Also clearly explain:
+Blockchain does not automatically make a property transfer legally valid. Real implementation requires integration with government authorities, legal identity systems, cadastral records, courts, and applicable property laws.
+________________________________________
+3️⃣ BLOCKCHAIN TECH STACK OPTIONS
+Give 3 options:
+OPTION A – EASY
+Use:
+• 
+Solidity
+• 
+• 
+Remix IDE
+• 
+• 
+Remix VM
+• 
+Features:
+• 
+Register Property
+• 
+• 
+View Property
+• 
+• 
+Transfer Ownership
+• 
+• 
+View Current Owner
+• 
+OPTION B – RECOMMENDED
+Use:
+• 
+Solidity
+• 
+• 
+Hardhat
+• 
+• 
+Ethers.js
+• 
+• 
+MetaMask
+• 
+• 
+local blockchain/testnet
+• 
+• 
+React frontend
+• 
+Features:
+• 
+authority/admin role
+• 
+• 
+property registration
+• 
+• 
+verification
+• 
+• 
+ownership transfer
+• 
+• 
+transaction history through events
+• 
+• 
+property search
+• 
+OPTION C – ADVANCED
+Use:
+• 
+Solidity
+• 
+• 
+Hardhat
+• 
+• 
+React/Next.js
+• 
+• 
+Ethers.js
+• 
+• 
+IPFS
+• 
+• 
+property document hashes
+• 
+• 
+multi-party approval
+• 
+• 
+payment/escrow simulation
+• 
+• 
+decentralized identity concepts
+• 
+For each option explain:
+• 
+tools required
+• 
+• 
+difficulty
+• 
+• 
+expected output
+• 
+• 
+whether real cryptocurrency is required
+• 
+Then recommend the best option for students.
+________________________________________
+4️⃣ BLOCKCHAIN CONCEPTS USED
+Explain:
+• 
+Blockchain
+• 
+• 
+Ethereum
+• 
+• 
+Smart Contract
+• 
+• 
+Solidity
+• 
+• 
+Wallet Address
+• 
+• 
+msg.sender
+• 
+• 
+struct
+• 
+• 
+mapping
+• 
+• 
+array
+• 
+• 
+enum
+• 
+• 
+modifier
+• 
+• 
+events
+• 
+• 
+require()
+• 
+• 
+ownership
+• 
+• 
+access control
+• 
+• 
+document hash
+• 
+• 
+transaction hash
+• 
+• 
+immutability
+• 
+• 
+audit trail
+• 
+• 
+testnet
+• 
+• 
+dApp
+• 
+• 
+gas
+• 
+• 
+off-chain metadata
+• 
+Explain why each concept is used.
+________________________________________
+5️⃣ PROJECT ACTORS
+Design actors:
+ADMIN / LAND AUTHORITY
+Responsibilities:
+• 
+register verified users optional
+• 
+• 
+register properties
+• 
+• 
+verify property records
+• 
+• 
+approve/monitor transfers if design requires
+• 
+PROPERTY OWNER
+Responsibilities:
+• 
+view owned property
+• 
+• 
+initiate transfer
+• 
+• 
+transfer only owned property
+• 
+BUYER / NEW OWNER
+Responsibilities:
+• 
+receive property ownership
+• 
+• 
+verify property details
+• 
+OPTIONAL VERIFIER
+Responsibilities:
+• 
+verify supporting documents
+• 
+• 
+approve property authenticity
+• 
+Explain permissions in a role table.
+________________________________________
+6️⃣ PROPERTY DATA MODEL
+Create Property struct containing:
+• 
+propertyId
+• 
+• 
+propertyNumber
+• 
+• 
+location
+• 
+• 
+area
+• 
+• 
+propertyType
+• 
+• 
+currentOwner
+• 
+• 
+previousOwner optional
+• 
+• 
+documentHash
+• 
+• 
+verified
+• 
+• 
+status
+• 
+• 
+registeredAt
+• 
+• 
+lastTransferredAt
+• 
+Possible property status:
+REGISTERED
+VERIFIED
+TRANSFER_PENDING
+TRANSFERRED
+DISPUTED optional
+Explain every field.
+________________________________________
+7️⃣ PROJECT ARCHITECTURE
+Design architecture:
+FRONTEND:
+Authority Dashboard
+• 
+Register Property
+• 
+• 
+Verify Property
+• 
+• 
+View Properties
+• 
+• 
+View Transactions
+• 
+Owner Dashboard
+• 
+View Owned Properties
+• 
+• 
+Initiate Transfer
+• 
+• 
+Enter New Owner Address
+• 
+• 
+View Ownership History
+• 
+Buyer Dashboard
+• 
+Verify Property
+• 
+• 
+View Ownership
+• 
+• 
+View Transfer Status
+• 
+BLOCKCHAIN:
+LandRegistry Smart Contract
+• 
+Property Registry
+• 
+• 
+Ownership Mapping
+• 
+• 
+Verification Logic
+• 
+• 
+Transfer Logic
+• 
+• 
+Event History
+• 
+OPTIONAL OFF-CHAIN:
+• 
+property documents
+• 
+• 
+title documents
+• 
+• 
+survey records
+• 
+• 
+images
+• 
+• 
+legal documents
+• 
+Store on-chain:
+• 
+property ID
+• 
+• 
+owner wallet
+• 
+• 
+status
+• 
+• 
+document hash
+• 
+• 
+metadata reference
+• 
+• 
+timestamps
+• 
+Do not store unnecessary personal identity documents directly on-chain.
+Include:
+• 
+text architecture diagram
+• 
+• 
+registration flow
+• 
+• 
+verification flow
+• 
+• 
+ownership transfer flow
+• 
+________________________________________
+8️⃣ PROPERTY REGISTRATION LOGIC
+Implement:
+registerProperty()
+Inputs:
+• 
+property ID
+• 
+• 
+location
+• 
+• 
+area
+• 
+• 
+property type
+• 
+• 
+initial owner
+• 
+• 
+document hash
+• 
+Rules:
+• 
+only authorized authority can register
+• 
+• 
+property ID must be unique
+• 
+• 
+owner cannot be zero address
+• 
+• 
+area must be valid
+• 
+• 
+document hash/reference should be present
+• 
+• 
+emit PropertyRegistered event
+• 
+Explain every validation.
+________________________________________
+9️⃣ PROPERTY VERIFICATION LOGIC
+Implement:
+verifyProperty()
+Rules:
+• 
+only authority/verifier
+• 
+• 
+property must exist
+• 
+• 
+already verified property handled correctly
+• 
+• 
+emit PropertyVerified event
+• 
+Explain why verification is separate from registration.
+________________________________________
+🔟 OWNERSHIP TRANSFER LOGIC
+Implement:
+transferOwnership()
+Rules:
+• 
+only current owner can initiate/execute transfer
+• 
+• 
+new owner address cannot be zero
+• 
+• 
+property must exist
+• 
+• 
+property must be verified
+• 
+• 
+disputed/blocked property cannot transfer if such state exists
+• 
+• 
+current owner must be updated
+• 
+• 
+transfer timestamp stored
+• 
+• 
+event emitted
+• 
+Optional advanced flow:
+requestTransfer()
+approveTransfer()
+completeTransfer()
+Explain both simple and multi-step approaches.
+________________________________________
+1️⃣1️⃣ OWNERSHIP HISTORY
+Explain how blockchain events can preserve historical transfers.
+Events:
+• 
+PropertyRegistered
+• 
+• 
+PropertyVerified
+• 
+• 
+TransferRequested
+• 
+• 
+OwnershipTransferred
+• 
+• 
+PropertyStatusChanged
+• 
+Explain that events can be indexed by frontend tools to build ownership history.
+Optional:
+Store previous owner addresses in array/history mapping.
+Explain gas tradeoffs.
+________________________________________
+1️⃣2️⃣ IMPLEMENTATION PLAN
+Phase 1:
+Development environment setup
+Phase 2:
+Architecture planning
+Phase 3:
+Role design
+Phase 4:
+Property data model
+Phase 5:
+Property registration
+Phase 6:
+Verification logic
+Phase 7:
+Ownership transfer
+Phase 8:
+Ownership history/events
+Phase 9:
+Document hash integration
+Phase 10:
+Security validation
+Phase 11:
+Hardhat tests
+Phase 12:
+Remix simulation
+Phase 13:
+Optional frontend
+Phase 14:
+GitHub documentation
+For every phase provide:
+• 
+objective
+• 
+• 
+steps
+• 
+• 
+code involved
+• 
+• 
+expected output
+• 
+• 
+common mistakes
+• 
+• 
+debugging tips
+• 
+• 
+proof to capture
+• 
+________________________________________
+1️⃣3️⃣ FOLDER STRUCTURE
+Create:
+Blockchain-Land-Registry-Property-Ownership/
+│
+├── contracts/
+│ └── LandRegistry.sol
+│
+├── scripts/
+│ └── deploy.js
+│
+├── test/
+│ └── LandRegistry.test.js
+│
+├── frontend/
+│ ├── src/
+│ └── components/
+│
+├── sample_documents/
+├── hashes/
+├── screenshots/
+├── reports/
+├── docs/
+├── README.md
+├── hardhat.config.js
+├── package.json
+└── .gitignore
+Explain each folder.
+________________________________________
+1️⃣4️⃣ FULL SMART CONTRACT CODE
+Provide complete working Solidity code.
+Include:
+A. ADMIN / AUTHORITY ROLE
+B. PROPERTY STRUCT
+C. MAPPINGS:
+• 
+propertyId → Property
+• 
+• 
+owner → property IDs optional
+• 
+D. FUNCTIONS:
+• 
+registerProperty()
+• 
+• 
+verifyProperty()
+• 
+• 
+getProperty()
+• 
+• 
+transferOwnership()
+• 
+• 
+getPropertiesByOwner()
+• 
+• 
+updatePropertyStatus() optional
+• 
+• 
+propertyExists()
+• 
+E. MODIFIERS:
+• 
+onlyAdmin / onlyAuthority
+• 
+• 
+onlyPropertyOwner
+• 
+• 
+propertyExists
+• 
+F. EVENTS:
+• 
+PropertyRegistered
+• 
+• 
+PropertyVerified
+• 
+• 
+OwnershipTransferred
+• 
+• 
+PropertyStatusUpdated
+• 
+G. SECURITY:
+• 
+prevent duplicate property IDs
+• 
+• 
+prevent unauthorized registration
+• 
+• 
+prevent unauthorized transfer
+• 
+• 
+reject zero addresses
+• 
+• 
+prevent invalid states
+• 
+• 
+validate property existence
+• 
+• 
+prevent owner from transferring property they do not own
+• 
+Code must be:
+• 
+modular
+• 
+• 
+executable
+• 
+• 
+commented
+• 
+• 
+beginner-friendly
+• 
+Explain every important function.
+________________________________________
+1️⃣5️⃣ DOCUMENT HASH VERIFICATION
+Explain why property documents should generally remain off-chain.
+Create dummy file:
+property_001.json
+Include:
+• 
+Property ID
+• 
+• 
+Survey Number
+• 
+• 
+Dummy Owner
+• 
+• 
+Location
+• 
+• 
+Area
+• 
+• 
+Property Type
+• 
+Generate hash.
+Explain:
+Step 1:
+Create document.
+Step 2:
+Generate SHA-256 or suitable hash.
+Step 3:
+Store hash in smart contract.
+Step 4:
+Modify document.
+Step 5:
+Generate hash again.
+Step 6:
+Compare hashes.
+Expected:
+Modified document produces different hash.
+Provide simple code or commands to generate hashes.
+________________________________________
+1️⃣6️⃣ VIRTUAL SIMULATION USING REMIX
+Use test accounts:
+ACCOUNT 1:
+Authority/Admin
+ACCOUNT 2:
+Owner A
+ACCOUNT 3:
+Buyer B
+ACCOUNT 4:
+Unauthorized User
+Simulation:
+Step 1:
+Open Remix IDE.
+Step 2:
+Create LandRegistry.sol.
+Step 3:
+Paste smart contract.
+Step 4:
+Compile.
+Step 5:
+Deploy using Remix VM.
+Step 6:
+Authority registers Property P001 with Owner A.
+Step 7:
+Call getProperty().
+Verify:
+Owner = Owner A.
+Step 8:
+Unauthorized account attempts to verify property.
+Expected:
+Rejected.
+Step 9:
+Authority verifies property.
+Step 10:
+Owner A transfers property to Buyer B.
+Step 11:
+Call getProperty().
+Verify:
+Owner = Buyer B.
+Step 12:
+Old Owner A tries transferring property again.
+Expected:
+Rejected.
+Step 13:
+Buyer B transfers property to another test wallet optional.
+Step 14:
+Review OwnershipTransferred events.
+Step 15:
+Verify ownership history.
+Explain:
+• 
+expected outputs
+• 
+• 
+transaction logs
+• 
+• 
+screenshots to capture
+• 
+________________________________________
+1️⃣7️⃣ HARDHAT IMPLEMENTATION
+Provide commands:
+npm init -y
+npm install --save-dev hardhat
+npx hardhat
+npx hardhat compile
+npx hardhat test
+npx hardhat node
+Provide:
+• 
+deployment script
+• 
+• 
+local account usage
+• 
+• 
+compilation steps
+• 
+• 
+automated testing flow
+• 
+________________________________________
+1️⃣8️⃣ TESTING STRATEGY
+Create tests for:
+1. 
+Contract deployment
+2. 
+3. 
+Correct authority
+4. 
+5. 
+Authority registers property
+6. 
+7. 
+Duplicate property ID rejected
+8. 
+9. 
+Zero owner rejected
+10. 
+11. 
+Unauthorized user cannot register
+12. 
+13. 
+Authority verifies property
+14. 
+15. 
+Unauthorized verification rejected
+16. 
+17. 
+Current owner transfers property
+18. 
+19. 
+Ownership changes
+20. 
+21. 
+Old owner cannot transfer again
+22. 
+23. 
+Non-owner transfer rejected
+24. 
+25. 
+Zero new-owner address rejected
+26. 
+27. 
+Invalid property rejected
+28. 
+29. 
+Unverified property transfer rejected if required
+30. 
+31. 
+Ownership event emitted
+32. 
+33. 
+Property lookup works
+34. 
+35. 
+Owner property listing works
+36. 
+37. 
+Document hash preserved
+38. 
+39. 
+Status transitions tested
+40. 
+For every test provide:
+• 
+initial condition
+• 
+• 
+action
+• 
+• 
+expected result
+• 
+• 
+expected revert
+• 
+Provide complete Hardhat test code.
+________________________________________
+1️⃣9️⃣ OPTIONAL FRONTEND DAPP
+Create:
+AUTHORITY DASHBOARD
+• 
+Connect Wallet
+• 
+• 
+Register Property
+• 
+• 
+Verify Property
+• 
+• 
+Search Property
+• 
+OWNER DASHBOARD
+• 
+Connect Wallet
+• 
+• 
+My Properties
+• 
+• 
+Transfer Property
+• 
+• 
+View History
+• 
+PROPERTY VERIFICATION PAGE
+• 
+Property ID
+• 
+• 
+Location
+• 
+• 
+Area
+• 
+• 
+Owner
+• 
+• 
+Verification Status
+• 
+• 
+Document Hash
+• 
+• 
+Transaction History
+• 
+Use:
+• 
+React
+• 
+• 
+Ethers.js
+• 
+• 
+MetaMask
+• 
+Provide basic frontend interaction code.
+________________________________________
+2️⃣0️⃣ SECURITY & REAL-WORLD LIMITATIONS
+Explain:
+• 
+unauthorized ownership transfer
+• 
+• 
+compromised private keys
+• 
+• 
+duplicate property registration
+• 
+• 
+fraudulent authority
+• 
+• 
+inaccurate off-chain data
+• 
+• 
+document forgery
+• 
+• 
+blockchain immutability
+• 
+• 
+wallet identity vs legal identity
+• 
+• 
+disputes
+• 
+• 
+inheritance
+• 
+• 
+court orders
+• 
+• 
+mortgage/liens
+• 
+• 
+government integration
+• 
+IMPORTANT:
+Explain that blockchain can preserve a tamper-evident ownership record, but cannot itself guarantee that the original property information entered is legally correct.
+Explain the “garbage in, garbage out” problem.
+A real system would require:
+• 
+government authority
+• 
+• 
+identity verification
+• 
+• 
+survey/cadastral databases
+• 
+• 
+legal approval
+• 
+• 
+dispute-resolution procedures
+• 
+• 
+registrar integration
+• 
+________________________________________
+2️⃣1️⃣ GITHUB UPLOAD STRATEGY
+Repository Name:
+Blockchain-Land-Registry-Property-Ownership
+Repository Description:
+“Educational blockchain land registry prototype using Solidity smart contracts for property registration, verification, ownership transfer, document-hash verification, and auditable ownership history.”
+GitHub Topics:
+• 
+blockchain
+• 
+• 
+solidity
+• 
+• 
+land-registry
+• 
+• 
+real-estate
+• 
+• 
+property
+• 
+• 
+ethereum
+• 
+• 
+smart-contract
+• 
+• 
+web3
+• 
+• 
+proptech
+• 
+• 
+hardhat
+• 
+• 
+ethersjs
+• 
+• 
+dapp
+• 
+Provide exact Git commands.
+Recommended commits:
+"Initialize blockchain land registry project"
+"Add property data model"
+"Implement authority-based property registration"
+"Add property verification workflow"
+"Implement secure ownership transfer"
+"Add property document hash verification"
+"Add ownership history events"
+"Add Hardhat tests"
+"Add Remix simulation proof"
+"Complete README and documentation"
+________________________________________
+2️⃣2️⃣ README GENERATION
+Generate complete README:
+Blockchain-Based Land Registry & Property Ownership System
+Overview
+Problem Statement
+Objectives
+Industry Relevance
+Educational Disclaimer
+Blockchain Concepts Used
+Actors
+Technology Stack
+System Architecture
+Property Data Model
+Property Registration
+Property Verification
+Ownership Transfer
+Ownership History
+Document Hash Verification
+Smart Contract Functions
+Events
+Security Controls
+Folder Structure
+Installation
+Remix Simulation
+Hardhat Testing
+Optional Frontend
+Screenshots
+Results
+Limitations
+Legal & Real-World Considerations
+Future Improvements
+Learning Outcomes
+Author
+________________________________________
+2️⃣3️⃣ PROOF-BUILDING STRATEGY
+Create day-wise development history:
+DAY 1:
+Architecture + environment
+DAY 2:
+Property struct/data model
+DAY 3:
+Property registration
+DAY 4:
+Property verification
+DAY 5:
+Ownership transfer
+DAY 6:
+Document hashing
+DAY 7:
+Ownership history/events
+DAY 8:
+Security testing
+DAY 9:
+Hardhat tests
+DAY 10:
+Remix simulation
+DAY 11:
+Frontend optional
+DAY 12:
+README + GitHub documentation
+For each day provide:
+• 
+code/files
+• 
+• 
+commit message
+• 
+• 
+screenshot
+• 
+• 
+what screenshot proves
+• 
+________________________________________
+2️⃣4️⃣ SCREENSHOTS / PROOF CHECKLIST
+Capture:
+1. 
+Project folder structure
+2. 
+3. 
+Solidity contract
+4. 
+5. 
+Successful compilation
+6. 
+7. 
+Contract deployment
+8. 
+9. 
+Property registration
+10. 
+11. 
+Property details output
+12. 
+13. 
+Unauthorized verification rejected
+14. 
+15. 
+Property verification
+16. 
+17. 
+Original owner
+18. 
+19. 
+Ownership transfer transaction
+20. 
+21. 
+New owner output
+22. 
+23. 
+Old owner transfer rejected
+24. 
+25. 
+Document hash generation
+26. 
+27. 
+Changed-file hash mismatch
+28. 
+29. 
+Ownership events
+30. 
+31. 
+Hardhat test results
+32. 
+33. 
+Optional frontend
+34. 
+35. 
+GitHub repository
+36. 
+37. 
+README preview
+38. 
+Provide suggested filenames.
+________________________________________
+2️⃣5️⃣ PROJECT REPORT
+Generate professional report:
+• 
+Abstract
+• 
+• 
+Introduction
+• 
+• 
+Problem Statement
+• 
+• 
+Traditional Land Registry
+• 
+• 
+Challenges
+• 
+• 
+Proposed Blockchain System
+• 
+• 
+Objectives
+• 
+• 
+Architecture
+• 
+• 
+Actors
+• 
+• 
+Property Data Model
+• 
+• 
+Smart Contract Design
+• 
+• 
+Registration Workflow
+• 
+• 
+Verification Workflow
+• 
+• 
+Ownership Transfer
+• 
+• 
+Document Hashing
+• 
+• 
+Security
+• 
+• 
+Implementation
+• 
+• 
+Testing
+• 
+• 
+Simulation
+• 
+• 
+Results
+• 
+• 
+Applications
+• 
+• 
+Advantages
+• 
+• 
+Limitations
+• 
+• 
+Legal Considerations
+• 
+• 
+Future Scope
+• 
+• 
+Conclusion
+• 
+________________________________________
+2️⃣6️⃣ INTERVIEW PREPARATION
+Generate exactly:
+10 predicted interview questions
++
+10 strong answers
+The FIRST question must be:
+“Explain your project.”
+Questions should test:
+• 
+Blockchain fundamentals
+• 
+• 
+Smart contracts
+• 
+• 
+Property ownership
+• 
+• 
+Solidity
+• 
+• 
+structs
+• 
+• 
+mappings
+• 
+• 
+modifiers
+• 
+• 
+access control
+• 
+• 
+document hashing
+• 
+• 
+ownership transfer
+• 
+• 
+events
+• 
+• 
+immutability
+• 
+• 
+security
+• 
+• 
+real-world limitations
+• 
+Answers should sound like a student who genuinely implemented and tested the project.
+FINAL RULES:
+• 
+Use only dummy property data.
+• 
+• 
+Do not claim blockchain ownership equals legal ownership.
+• 
+• 
+Do not require real cryptocurrency.
+• 
+• 
+Do not skip smart contract code.
+• 
+• 
+Do not skip document hash verification.
+• 
+• 
+Do not skip testing.
+• 
+• 
+Do not skip virtual simulation.
+• 
+• 
+Explain legal and real-world limitations clearly.
+• 
+• 
+Make the project executable.
+• 
+• 
+Make it beginner-friendly.
+• 
+• 
+Make it industry-oriented.
+• 
+• 
+Make it GitHub-ready.
+• 
+• 
+Make it placement-ready.
+• 
+• 
+Provide copy-paste-ready content.

@@ -1,0 +1,17 @@
+{
+  "name": "blockchain-land-registry-property-ownership",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Educational blockchain land registry prototype using Solidity and Hardhat.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "hash": "node scripts/hash-document.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.17"
+  }
+}

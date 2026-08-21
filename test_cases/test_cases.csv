@@ -1,0 +1,11 @@
+id,scenario,expected_result,status
+TC-01,Deploy contract,Deployer is admin,PASS
+TC-02,Register valid property,Property ID 1 is stored,PASS
+TC-03,Register duplicate ID,Transaction reverts,PASS
+TC-04,Verify property as admin,Property becomes verified,PASS
+TC-05,Verify as unauthorized account,Transaction reverts,PASS
+TC-06,Transfer before verification,Transaction reverts,PASS
+TC-07,Transfer as current owner,New owner is stored,PASS
+TC-08,Transfer as old owner,Transaction reverts,PASS
+TC-09,Query invalid property,Transaction reverts,PASS
+TC-10,Frontend lookup,Property details appear,PASS
