@@ -190,6 +190,22 @@ The verification workflow is:
 
 A changed document should produce a different hash.
 
+## Results
+
+The completed prototype demonstrates:
+
+- synthetic property registration by an authority account
+- separate property verification
+- verified-owner transfer from Owner A to Buyer B
+- rejection of unauthorized and invalid transactions
+- owner-list updates after transfer
+- SHA-256 document integrity comparison
+- event-based registration and ownership history
+- 15 automated Hardhat tests
+- local React and MetaMask property lookup
+
+The result is a reproducible educational proof of concept, not a legally valid land registry.
+
 ## Testing
 
 The Hardhat suite contains 15 passing tests covering:
@@ -244,7 +260,7 @@ Account 4: Unauthorized User
 ## Installation and Local Execution
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/adarshsrivastav23905/Blockchain-Land-Registry-Property-Ownership.git
 cd Blockchain-Land-Registry-Property-Ownership
 npm install
 npm run compile
@@ -451,6 +467,25 @@ Documentation and Evidence
 - [reports/project-report.md](reports/project-report.md) - project report
 - [outputs/](outputs/) - reproducible output files
 - [test_cases/](test_cases/) - test scenarios
+
+## Project Evidence
+
+Store demonstration screenshots in [`screenshots/`](screenshots/) using descriptive filenames such as:
+
+| Filename | Evidence |
+|---|---|
+| `01_contract_tests.png` | Hardhat output showing 15 passing tests |
+| `02_compile.png` | Successful Solidity compilation |
+| `03_local_node.png` | Hardhat local accounts and RPC endpoint |
+| `04_deployment.png` | Deployed contract and verified demo property |
+| `05_metamask_connection.png` | MetaMask connected to Hardhat Local |
+| `06_property_lookup.png` | Frontend lookup for property ID 1 |
+| `07_property_verified.png` | Verified property details |
+| `08_transfer_event.png` | Ownership transfer event or transaction |
+| `09_hash_output.png` | SHA-256 document hash output |
+| `10_error_validation.png` | Expected rejected transaction or invalid lookup |
+
+Use synthetic data and local test accounts only. Screenshots demonstrate project behavior and do not prove legal property ownership. See [docs/proof-checklist.md](docs/proof-checklist.md) for the complete evidence plan.
 
 ## Conclusion
 
