@@ -12,5 +12,6 @@ Place project proof screenshots here. Suggested evidence filenames:
 | `08_transfer_event.png` | Ownership transfer event or transaction |
 | `09_hash_output.png` | SHA-256 document hash output |
 | `10_error_validation.png` | Expected rejected transaction or invalid lookup |
+| `11_github_repository.png` | Published GitHub README showing the project overview |
 
 Use synthetic data only. The screenshots are demonstration evidence and do not prove legal property ownership.

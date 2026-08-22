@@ -293,6 +293,114 @@ npm run dev
 
 The current frontend demonstrates wallet connection and property lookup. Registration, verification, transfer, and history views are future extensions.
 
+## Project Screenshots
+
+The screenshots below are professional evidence for the local Hardhat prototype. Use a 1366x768 or 1440x900 viewport, keep text readable, and capture only synthetic data and local test accounts.
+
+### Contract Tests
+
+Run `npm test` from the repository root and capture the final output containing `15 passing`.
+
+![Contract tests passing](screenshots/01_contract_tests.png)
+
+Filename: `screenshots/01_contract_tests.png`
+
+### Solidity Compilation
+
+Run `npm run compile` and capture the command and successful result.
+
+![Successful compilation](screenshots/02_compile.png)
+
+Filename: `screenshots/02_compile.png`
+
+### Local Hardhat Node
+
+Run `npx hardhat node` and capture the RPC startup line and test-account section. Do not include private keys in the final image.
+
+![Local Hardhat node](screenshots/03_local_node.png)
+
+Filename: `screenshots/03_local_node.png`
+
+### Contract Deployment
+
+With the node running, run `npm run deploy:local`. Capture the authority, deployed `LandRegistry` address, and `Demo property: 1 (verified)` output.
+
+![Contract deployment](screenshots/04_deployment.png)
+
+Filename: `screenshots/04_deployment.png`
+
+### MetaMask Connection
+
+Start the frontend with `cd frontend`, then `npm run dev -- --host 127.0.0.1`. Configure MetaMask for Hardhat Local using RPC `http://127.0.0.1:8545`, chain ID `31337`, and currency `ETH`. Connect a Hardhat test account.
+
+![MetaMask connection](screenshots/05_metamask_connection.png)
+
+Filename: `screenshots/05_metamask_connection.png`
+
+### Property Lookup
+
+Open the frontend, enter the deployed contract address, enter property ID `1`, and click **Search Property**. Capture the complete result card.
+
+![Property lookup](screenshots/06_property_lookup.png)
+
+Filename: `screenshots/06_property_lookup.png`
+
+### Verified Property Details
+
+Use the same property lookup and ensure the frame shows `Verified: Yes`, `P-001`, the synthetic location, area, owner, document hash, and status.
+
+![Verified property details](screenshots/07_property_verified.png)
+
+Filename: `screenshots/07_property_verified.png`
+
+### Ownership Transfer Event
+
+Capture a successful `OwnershipTransferred` event from a Hardhat test or contract interaction. The evidence should show property ID `1`, the previous owner, the new owner, and the successful transaction/event.
+
+![Ownership transfer event](screenshots/08_transfer_event.png)
+
+Filename: `screenshots/08_transfer_event.png`
+
+### Document Hash
+
+Run `node scripts/hash-document.js sample_documents/property_001.json` and capture the complete SHA-256 output.
+
+![Document hash output](screenshots/09_hash_output.png)
+
+Filename: `screenshots/09_hash_output.png`
+
+### Validation Error
+
+Use property ID `999` or perform another intentional invalid operation. Capture the visible error message and the input that caused it.
+
+![Validation error](screenshots/10_error_validation.png)
+
+Filename: `screenshots/10_error_validation.png`
+
+### GitHub Repository
+
+Open the published GitHub repository and capture the README showing the project title, overview, technology stack, and project status. Keep the repository URL visible and exclude personal browser information.
+
+![GitHub repository README](screenshots/11_github_repository.png)
+
+Filename: `screenshots/11_github_repository.png`
+
+### Capture Checklist
+
+- [ ] `01_contract_tests.png` - 15 Hardhat tests passing
+- [ ] `02_compile.png` - successful compilation
+- [ ] `03_local_node.png` - local RPC and test accounts
+- [ ] `04_deployment.png` - deployed address and verified demo property
+- [ ] `05_metamask_connection.png` - MetaMask connected to Hardhat Local
+- [ ] `06_property_lookup.png` - property ID 1 result
+- [ ] `07_property_verified.png` - verified property and document hash
+- [ ] `08_transfer_event.png` - successful ownership transfer event
+- [ ] `09_hash_output.png` - SHA-256 output
+- [ ] `10_error_validation.png` - rejected or invalid operation
+- [x] `11_github_repository.png` - published GitHub README
+
+Review every image for clipped text, unreadable hashes, stale addresses, private keys, and unrelated personal information. The current frontend supports wallet connection and read-only lookup; registration, verification, transfer, and history evidence must currently come from Hardhat tests or contract tools. These screenshots demonstrate a local educational prototype and do not prove legal property ownership.
+
 ## Project Structure
 
 ```text
