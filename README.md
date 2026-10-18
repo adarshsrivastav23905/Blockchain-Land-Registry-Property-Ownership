@@ -55,7 +55,7 @@ The prototype supports:
 
 ## System Architecture
 
-```text
+```text.    
 Authority / Owner / Buyer
             |
             v
