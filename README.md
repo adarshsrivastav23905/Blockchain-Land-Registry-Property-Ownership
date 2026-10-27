@@ -23,7 +23,7 @@ The prototype supports:
 - authority-controlled property registration
 - separate property verification
 - wallet-linked current ownership
-- direct ownership transfer after verification
+- direct ownership transfer after verification.  
 - property lifecycle status management
 - SHA-256 document-hash storage
 - event-based audit history
