@@ -11,7 +11,7 @@ Blockchain | Solidity | Web3 | Smart Contracts
 ## Project Status
 
 ### Functional Local dApp Prototype
-
+  
 The project is implemented and tested on a local Hardhat network. It uses synthetic property data and test wallets only. It does not create, transfer, or prove legally valid ownership of real property.
 
 ## Project Overview
